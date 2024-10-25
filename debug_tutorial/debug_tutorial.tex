@@ -28,8 +28,8 @@
 
 
 % ----- Identifying Information -----------------------------------------------
-\newcommand{\myassignment}{Lab 2: Debugging on the ELVIS III/DSDB boards}
-\newcommand{\myinstructor}{Alex Underwood, Brett Mathis, Ross Thompson, and James E. Stine}
+\newcommand{\myassignment}{Project Addendum: Debugging on the ELVIS III/DSDB boards}
+\newcommand{\myinstructor}{Alex Underwood, Brett Mathis, Rose Thompson, and James E. Stine}
 % -----------------------------------------------------------------------------
 
 \begin{document}
@@ -40,12 +40,13 @@
 \end{center}
 
 \section{Debugging on an FPGA}
-Debugging a circuit as it runs on an FPGA is quite different from when
+Debugging a circuit as it runs on an Field Programmable Gate Array (FPGA)
+is quite different from when
 it is running in a simulation tool like ModelSim.  Unlike ModelSim,
 where all the logic signals inside the circuit can be exposed and
 easily added to a waveform viewer, FPGAs have no inherently easy way
 of viewing all of their logic signals.  In fact, many logic signals
-that exist in your Verilog may be optimized or implemented out of the
+that exist in your SystemVerilog may be optimized or implemented out of the
 design in order for the circuit's logic to better fit with what an
 FPGA can do.  The FPGA also runs off of a real clock signal in real
 time, making slowly stepping through the circuit like ModelSim nearly
@@ -53,8 +54,9 @@ impossible.  Luckily, Xilinx FPGAs and Vivado include debugging tools
 that make it possible to `see' what is going on with some caveats.
 
 There are two major ways to debug on hardware in Vivado -
-block-diagram-level debugging and Verilog-level debugging.  For this
-project, you will use Verilog level debugging.
+block-diagram-level debugging and SystemVerilog-level debugging.  To
+help you with the final project implementation,
+you will use SystemVerilog level debugging.
 
 \section{Adding Debug Flags}
 To debug a signal, you need to tell the synthesizer and implementer
@@ -78,13 +80,17 @@ you'll need to add flags to those as well and reprocess the changes
 you've made.
 	
 \section{Setting up Debugging}
+
 Once you've added the debug flags and saved/updated your changes to
 the module, click `Run Synthesis' and wait for Block Generation and
-Synthesis to complete.  We need to step in post-synthesis and modify a
+Synthesis to complete.  We need an additional step in
+post-synthesis and modify a
 few things before we continue running the toolchain, so don't jump to
-Generate Bitstream yet or the debug flags will be ignored.  After
-synthesis, open the synthesized design and select `Set up Debugging'.
-This is where you will set up an Integrated Logic Analyzer that will
+Generate Implementation or Generate Bitstream yet or the debug flags
+will be ignored.  After
+synthesis, open the synthesized design on the left-hand panel of
+Vivado and select `Set up Debugging'.
+This is where you will set up an Integrated Logic Analyzer (ILA) that will
 monitor your flagged signals and relay the information back to Vivado.
 Select to start debugging only new nets and proceed.
 \begin{figure} [h!]
@@ -102,10 +108,10 @@ the list.
 	
 Next, you can select how many samples of data you'd like to take with
 each measurement.  Each sample represents a clock cycle, so the
-default of 1024 will be fine for most of what we do in lab. However,
+default of $1,024$ will be fine for most of what we do in lab. However,
 if you start using a significant number of signals to debug your
-design, you may want to increase the sample depth. This is fine,
-although this will require a slightly longer synthesis time.
+design, you may want to increase the sample depth. This additional
+depth may require a slightly longer synthesis time.
 \begin{figure} [h!]
   \centering
   \includegraphics[scale=0.35]{figures/figure3.png}
