@@ -51,6 +51,16 @@ ideas that we covered as well as had within laboratories.  It will
 also try to reinforce all the skills you learned during your time in
 laboratory.
 
+This project is significantly involved and much of the detail is left
+up to you to implement.  Therefore, it is important to allocate your
+time wisely and come into laboratory every week.  Do not assume you
+can do much of the work later.  To make things worse, we only have one
+week when we return from Thanksgiving making it almost impossible to
+complete the project during that final week.  That is, you should
+complete most of the project items before Fall Break and the
+Thanksgiving Holiday.  Waiting until the final week is an almost
+disaster.  
+
 When designing digital systems, the process of creating logic to
 accomplish some form of computation is a function of the blocks that
 can be utilized.  Many times, the only way to increase the amount of
@@ -59,6 +69,9 @@ sometimes computation needs to be processed independently per block
 and the only way to increase the computation time is to increase the
 amount that can happen per time.  This is sometimes called
 throughput.
+
+
+\section{Background}
 
 Throughput can be visualized with a kitchen.  Suppose that somone only
 has $1$ oven in their kitchen.  Obviously, the cook is limited by the
@@ -105,14 +118,12 @@ consumption, however, if you can significantly gain performance by increasing
 throughput with a small increase in energy, it is often worth the
 investment.  This is what we are investigating for this project or
 increasing the throughpu of our design.
-\begin{figure} [h!]
+\begin{figure} [t!]
   \centering
   \includegraphics[scale=1.2]{throughput1.png}
   \caption{Adding registers to increase throughput}
   \label{throughput1.fig}
 \end{figure}
-
-\section{Background}
 
 The key to digital systems is that digital logic can process data in
 parallel.  This project involves taking Laboratory $2$ and modifying
@@ -123,8 +134,10 @@ functional on the board:
 \item Control logic should be added to control each iteration of the
   unit to compute the SHA-256 operation.
 \item All testbenches for the system, control, and datapath.
+\item Use of the ILA to test your design (see Section~\ref{ila.sec})
 \item Cleaned up code removing any unnecessary logic and/or states.
-\item A report documenting the complete game and its operation.
+\item A report documenting the complete system and its operation
+  indicating that it is working.
 \item Anything you can think of to promote your project!
 \end{itemize}
 
@@ -136,17 +149,19 @@ project will incur extra points that could help compensate for a bad test, missi
 bad quiz. The following are potential modifications you can easily add
 for extra credit:
 \begin{itemize}
-\item Add other operations (e.g., SHA-512)
+\item Add more operations (e.g., SHA-512)
 \item Add some way to add a new input message to the unit as opposed
   to hard coding the messages.
 \item Determine a way to optimize the operation of the register to
-  process throughput faster (e.g., adding another \verb!main_comp! block)
+  process throughput faster (e.g., adding another \verb!main_comp!
+  block so that it completes faster and balances the timing between clocking)
 \item Determine the best timing to optimize the throughput
-\item Add poster to explain to the masses!
+\item Add a poster to explain to the masses!
 \item Create a YouTube\textsuperscript{\textcircled{R}} channel on this project.
 \end{itemize}
 
 \section{Implementation}
+\label{implementation.sec}
 
 The basic idea for the inputs and output includes your move which you
 should add through the switches.  You will technically only need a
@@ -199,7 +214,8 @@ the right time.  You can utilize the methodology in class to design
 the datapath and control of this design, however, any approach that is
 reasonable also works.
 
-\subsection{Integrated Logic Analyzer}
+\subsection{Integrated Logic Analyzer (ILA)}
+\label{ila.sec}
 
 In Lab~$2$, we used the $7$-segment display to display the final
 result.  Although this works, many designers use Field Programmable
