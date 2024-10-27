@@ -73,7 +73,7 @@ throughput.
 
 \section{Background}
 
-Throughput can be visualized with a kitchen.  Suppose that somone only
+Throughput can be visualized with a kitchen.  Suppose that someone only
 has $1$ oven in their kitchen.  Obviously, the cook is limited by the
 amount of time that can complete a dinner by how often I can use this
 oven.  On the other hand, if I am fortunate to have $2$ ovens in my
@@ -88,17 +88,17 @@ design is to add a register where one stores intermediate results.
 These intermediate results are typically stored into a group of flip
 flops or a register and fed back into the register to get to the final
 computation.  The use of registers helps optimize this throughput and
-also increses the latency of the computation by increasing the clock
+also increases the latency of the computation by increasing the clock
 rate.
 
 For example, suppose a computation needs to pass through $4$
-adders to form the final resul and stored into a registert.
+adders to form the final result and stored into a register.
 Also, assume that each adder
 completes its operation in $100$ ns and stores the result into a
 register.  In theory, this would be $4 \times 100 = 400$~ns to
 complete the operation.
 If a designer removed $3$ of these adders and
-added a register folllowing an adder (note: the result would need to go back
+added a register following an adder (note: the result would need to go back
 into the adder $3$ more times to complete the operation as shown in
 Figure~\ref{throughput1.fig}).
 For both of these scenarios, it
@@ -107,17 +107,17 @@ register, but for this example, I am assuming that this amount is
 negligible.  
 However, the first unit can only be clocked at $1/400ns = 2.5$ MHz,
 however, the second version could be computed at $1/100ns = 10.0$ MHz and run
-significantly faster.  If a company is designign this hardware to process $100,000$
+significantly faster.  If a company is designing this hardware to process $100,000$
 operations, the first version can only process all of these items in
 $40$ msec, whereas, the clocked version takes $10$ msec.  This is a
 $4$x speedup and significant improvement in latency for the total
 operation.
-Most imporantly, the second architecture may have less area
+Most importantly, the second architecture may have less area
 than the first architecture.  Typically, more registers can increase energy
 consumption, however, if you can significantly gain performance by increasing
 throughput with a small increase in energy, it is often worth the
 investment.  This is what we are investigating for this project or
-increasing the throughpu of our design.
+increasing the throughput of our design.
 \begin{figure} [t!]
   \centering
   \includegraphics[scale=1.2]{throughput1.png}
@@ -165,7 +165,7 @@ for extra credit:
 
 The basic idea for the inputs and output includes your move which you
 should add through the switches.  You will technically only need a
-``Start'' signalto get things going in the FSM.  As explained in
+``Start'' signal to get things going in the FSM.  As explained in
 class, you should create the FSM intelligently, so that it can
 theoretically process more data when needed.
 
@@ -200,7 +200,7 @@ engineering system is making sure that you have more advantages than
 disadvantages for it to be successful.  Some advantages to this
 approach are: increased throughput, reduced latency per task, enhanced
 resource utilization, and scalability.  The disadvantage to this
-process is that its mmore challenging and complex than a traditional
+process is that its more challenging and complex than a traditional
 serial approach.  There are other disadvantages, such as minimal
 increase in latency, but for the most part using this approach saves a
 ton of time.  That is, carefully balancing these trade-offs is key to
