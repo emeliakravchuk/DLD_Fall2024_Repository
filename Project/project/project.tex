@@ -264,9 +264,7 @@ this.  The tasks of the project are as follows:
   \item Complete block diagrams of your system, include detailed
     interface specifications listing all signals and describing their
     timing.
-  \item Expand the current design to work with a $16 \times 16$ grid.
-    You are welcome to expand this size for extra credit.
-\item Design a control logic presumably with a FSM to have it work
+  \item Design a control logic presumably with a FSM to have it work
   correctly.
 \item  Build the testbench to simulate your design and make sure
   things are working for both the datapath, control and combined
@@ -277,9 +275,15 @@ this.  The tasks of the project are as follows:
     seven segment display to output key elements of your project.
     Remember, to use the LEDs to help you debug your design.
   \item Document the output of ILA for the message and hashed output.
-  \item Finally compare the timing of both designs and provide a
+    You can use the ILA to debug your design, as well.  This should be
+    significantly easier than using other items (e.g., $7$-segment
+    display).  Once you have the ILA set up, it is conceivably easy to
+    run over and over.
+  \item Finally compare the PPA of both designs and provide a
     justification if this project's design can process $1$ million SHA
-    vectors faster or slower than Lab~$2$'s implementation.
+    vectors faster or slower than Lab~$2$'s implementation.  Please be
+    aware that the area of your ILA-enabled design my be larger due to
+    the added items needed to support the ILA.
 \end{enumerate}
 
 Again, the process here is not difficult.  If you need to work out any
