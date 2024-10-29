@@ -166,11 +166,11 @@ for extra credit:
 \section{Implementation}
 \label{implementation.sec}
 
-The basic idea for the inputs and output includes your move which you
-should add through the switches.  You will technically only need a
+The basic idea for the inputs and output includes the start of your hash
+which you should add through the switches.  You will technically only need a
 ``Start'' signal to get things going in the FSM.  As explained in
 class, you should create the FSM intelligently, so that it can
-theoretically process more data when needed.
+theoretically process more data when needed.  
 
 The main key elements of the design will be provided to you, such as
 the \verb!sha256.sv! module.  But, you will have to add registers,
@@ -269,7 +269,8 @@ this.  The tasks of the project are as follows:
     version of the \verb!main_comp! block and put registers after this
     unit.  You are welcome to determine the most optimal number of
     \verb!main_comp! blocks to use, but to get the baseline project
-    done, I would use only $1$ block.
+    done, I would use only $1$ block.  You should also have a register
+    to store your final hash value, as well. 
   \item Complete block diagrams of your system, include detailed
     interface specifications listing all signals and describing their
     timing.
