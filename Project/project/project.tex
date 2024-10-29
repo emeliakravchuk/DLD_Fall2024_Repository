@@ -267,9 +267,11 @@ this.  The tasks of the project are as follows:
   \item Add registers and any other logic to pipeline your system
     accordingly from \verb!sha256.sv!.  It is easiest to use $1$
     version of the \verb!main_comp! block and put registers after this
-    unit.  You are welcome to determine the most optimal number of
+    instaniated module.  This way, you can sequence it with registers
+    and control logic.  You are welcome to determine the most optimal number of
     \verb!main_comp! blocks to use, but to get the baseline project
-    done, I would use only $1$ \verb!main_comp! block.  You should also have a register
+    done, I would use only $1$ \verb!main_comp! block.  You should
+    also have a register    
     to store your final hash value, as well. 
   \item Complete block diagrams of your system, include detailed
     interface specifications listing all signals and describing their
