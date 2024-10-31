@@ -1,0 +1,360 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/James Stine/OneDrive - Oklahoma A and M System/Desktop/dldfall2024/Project/Recitation
+T_opt
+Z1 !s110 1730392657
+VP?PLKDkiHi0;gAQ=]io0j1
+04 8 4 work stimulus fast 0
+=1-6c3c8cfa8abb-6723b251-1f0-e90
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+vchoice
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
+!i10b 1
+!s100 Wo^Gak0o2o8G:flnRXOGL0
+If5@RP_?kL8XVH=>Rn>;c?3
+S1
+R0
+Z4 w1730392614
+Z5 8sha256.sv
+Z6 Fsha256.sv
+!i122 0
+L0 378 5
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z9 !s108 1730392657.000000
+Z10 !s107 tb_sha256.sv|sha256.sv|flopenr.sv|
+Z11 !s90 flopenr.sv|sha256.sv|tb_sha256.sv|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vflopenr
+R3
+R1
+!i10b 1
+!s100 >H53_[VzEd=<^J85CUzQ61
+IF@VNY1HJW0NSRQ68@VL0j2
+S1
+R0
+R4
+8flopenr.sv
+Fflopenr.sv
+!i122 0
+L0 27 9
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vintermediate_hash
+R3
+R1
+!i10b 1
+!s100 lgTNCnl0XH_ge43be1Hg30
+IPl]aQo`dkV^_J?QDIXzJ]0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 357 14
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vmain_comp
+R3
+R1
+!i10b 1
+!s100 H3@6KPbB?;`H5lDVkUOA02
+IhKl:fR=J37]a0:Q7zE5@B2
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 327 29
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vmajority
+R3
+R1
+!i10b 1
+!s100 NlZGDDK>Tbl<_kVZIVg;A2
+I_e_ni5`YdjOEiVUmO50za0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 372 5
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vprepare
+R3
+R1
+!i10b 1
+!s100 ioid0:iFE2k9zLGcigzTJ1
+IEM2iNdMznUafkOPcjhJMc0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 101 224
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vsha256
+R3
+R1
+!i10b 1
+!s100 ?S9CATnL:TFW5=aRN5WAh0
+IQi9b=8L=UKYCT9U[cE3in2
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 29 71
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vsha_padder
+R3
+R1
+!i10b 1
+!s100 aH43ReM1fWQm^R25[>HKj2
+I5WMoAi7o_4B;39<^:X=N83
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 17 11
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vSigma0
+R3
+R1
+!i10b 1
+!s100 o8WQhE^@BT14A;3m6:RAa1
+Id9eVFG5Q:K[VE9RZ[bKCB0
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 384 5
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+n@sigma0
+vsigma0
+R3
+R1
+!i10b 1
+!s100 B=K6AkfLH^iYE1H6OZW743
+I?TQknOEbb<lF_=E?O][ko2
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 390 5
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vSigma1
+R3
+R1
+!i10b 1
+!s100 J=QZ[BRISon0a62UPU@K]0
+IBGjMPlnOMENY]GJ<N8UhR3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 396 5
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+n@sigma1
+vsigma1
+R3
+R1
+!i10b 1
+!s100 A9i:i52UDfLebeaZFoSNj0
+Iz67hKS7S]Gez`6`IPE=nn3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 402 5
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vstimulus
+R3
+R1
+!i10b 1
+!s100 NFEH:d0a09OgO^4mK@>gX1
+IPZUbegz^d7D3;kYdFlgkA3
+S1
+R0
+R4
+8tb_sha256.sv
+Ftb_sha256.sv
+!i122 0
+L0 2 60
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
+vtop
+R3
+R1
+!i10b 1
+!s100 Akg`;S?4_0;3`<aDnXcTg0
+Idf8heA2`YdR[Z]>c[d8j`3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 5 11
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R2
